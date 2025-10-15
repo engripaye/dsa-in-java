@@ -160,6 +160,30 @@ public class Day1 {
         }
         System.out.println("Is Sorted: " + isSorted); // True
 
+
+        // SUM OF ARRAY ELEMENTS WITH CONDITIONS(Sum all the elements greater than a given threshold)
+        int[] arr6 = {5, 15, 20, 8};
+        int threshold = 10;
+        int sum = 0;
+        for (int num6 : arr6){
+            if (num6 > threshold) {
+                sum += num6;
+            }
+        }
+        System.out.println("Sum > " + threshold + ": " + sum); // output 35
+
+
+        // ROTATE ARRAY LEFT BY ONE POSITION(Shift all elements left by one, 1st element becomes last)
+        int [] arr7 = {10, 20, 30, 40, 50};
+        if (arr7.length > 0){
+            int first = arr7[0];
+            for (int i = 1; i<arr7.length; i++){
+                arr7[i -1] = arr7[i];
+            }
+            arr7[arr7.length - 1] = first;
+        }
+        System.out.println(Arrays.toString(arr7)); // output 20, 30, 40, 50, 10
     }
+
 
 }
