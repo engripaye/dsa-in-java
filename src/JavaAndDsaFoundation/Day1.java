@@ -1,5 +1,7 @@
 package JavaAndDsaFoundation;
 
+import java.util.Arrays;
+
 public class Day1 {
 
     // JAVA BASICS (LOOPS, CONDITIONS & ARRAYS)
@@ -96,8 +98,68 @@ public class Day1 {
         scores[1] = 88; // update element
 
         // REVERSE AN ARRAY (we can reverse in-place(without extra space) by swapping elements from start and end)
+        int [] arr2 = {1, 2, 3, 4, 5};
+        int left = 0;
+        int right = arr2.length - 1;
+
+        while (left < right) {
+            // swap
+            int temp = arr2[left];
+            arr2[left] = arr2[right];
+            arr2[right] = temp;
+            left++;
+            right++;
+        }
+
+        System.out.println(Arrays.toString(arr2)); // output : 5,4,3,2,1
+
+
+        // MAXIMUM AND MINIMUM IN AN ARRAY (Initialize max/min)
+        int[] arr3 = {10, 5, 20, 3, 15};
+        if(arr3.length == 0) {
+            System.out.println("Array is empty");
+            return;
+        }
+        int max3 = arr3[0];
+        int min3 = arr3[0];
+
+        for (int i = 1; i<arr.length; i++){
+            if (arr3[i] > max3) {
+                max3 = arr3[i];
+            } if (arr3[i] < min3) {
+                min3 = arr3[i];
+            }
+        }
+
+        System.out.println("Max3: " + max3 + "Min3: " + min3); // output: Max3: 20, Min3: 3
+
+
+        // EVEN NUMBERS IN ARRAY
+        int[] arr4 = {1, 2, 3, 4, 5, 6};
+        int count4 = 0;
+        for (int num4 : arr4){
+            if (num4 % 2 == 0){
+                count4++;
+            }
+        }
+        System.out.println("Even count: " + count4); // output: 3
+
+
+        // CHECK IF ARRAY IS SORTED (ASCENDING)
+        int[] arr5 = {1, 3, 5, 7};
+        boolean isSorted = true;
+        for (int i =1; i<arr5.length; i++){
+            if (arr5[i] < arr5[i - 1]) {
+                isSorted = false;
+                break;
+            }
+        }
+        System.out.println("Is Sorted: " + isSorted); // True
 
     }
+
+
+
 
 
 
