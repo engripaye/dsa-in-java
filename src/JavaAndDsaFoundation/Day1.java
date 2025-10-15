@@ -16,6 +16,7 @@ public class Day1 {
             System.out.println("Iteration: " + i); // output 0 -> 4
         }
 
+
         // WHILELOOP (Runs as long as a condition is true (check condition b4 execution))
         int count = 0;
         while (count < 5) {
@@ -24,12 +25,15 @@ public class Day1 {
                 count ++; // output 0 -> 4
         }
 
+
         // DO-WHILE LOOP (Similar to while but checks condition after execution)
         int num = 0;
         do {
             System.out.println("Num" + num);
             num++;
         } while (num < 5);  // output 0 -> 4
+
+
 
         // ENHANCED FOR LOOP (For-Each) (Great for iterating over Arrays or collections)
         int [] arr = {0, 1, 2, 3, 4};
@@ -157,10 +161,5 @@ public class Day1 {
         System.out.println("Is Sorted: " + isSorted); // True
 
     }
-
-
-
-
-
 
 }
