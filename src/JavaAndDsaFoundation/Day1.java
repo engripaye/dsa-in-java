@@ -185,5 +185,4 @@ public class Day1 {
         System.out.println(Arrays.toString(arr7)); // output 20, 30, 40, 50, 10
     }
 
-
 }
