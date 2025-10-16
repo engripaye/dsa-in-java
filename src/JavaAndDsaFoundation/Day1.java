@@ -29,7 +29,7 @@ public class Day1 {
         // DO-WHILE LOOP (Similar to while but checks condition after execution)
         int num = 0;
         do {
-            System.out.println("Num" + num);
+            System.out.print("Num" + num);
             num++;
         } while (num < 5);  // output 0 -> 4
 
@@ -38,7 +38,7 @@ public class Day1 {
         // ENHANCED FOR LOOP (For-Each) (Great for iterating over Arrays or collections)
         int [] arr = {0, 1, 2, 3, 4};
         for (int element : arr) {
-            System.out.println(element); // output 0 -> 4
+            System.out.print(element); // output 0 -> 4
         }
 
 
@@ -49,20 +49,20 @@ public class Day1 {
         // IF-ELSE STATEMENT
         int age = 20;
         if (age >= 18) {
-            System.out.println("Adult");
+            System.out.print("Adult");
         } else {
-            System.out.println("Minor");
+            System.out.print("Minor");
         }   // output - Adult
 
 
         // IF-ELSE-IF STATEMENT
         int score = 85;
         if (score >= 90) {
-            System.out.println("A");
+            System.out.print("A");
         } else if (score >= 80) {
-            System.out.println("B");
+            System.out.print("B");
         }else {
-            System.out.println("C");
+            System.out.print("C");
         } // output - B
 
 
@@ -70,19 +70,19 @@ public class Day1 {
         String day = "Monday";
         switch (day) {
             case "Monday":
-                System.out.println("Start of the Week");
+                System.out.print("Start of the Week");
                 break;
             case "Friday":
-                System.out.println("End of the week");
+                System.out.print("End of the week");
                 break;
             default:
-                System.out.println("Midweek");
+                System.out.print("Midweek");
         } // output: start of the week
 
 
         // TERNARY OPERATOR (shorthand for simple if-else)
         int max = (5 > 3) ? 5 : 3;
-        System.out.println(max); // output - 5
+        System.out.print(max); // output - 5
 
 
 
@@ -98,7 +98,7 @@ public class Day1 {
         // or combined
         int[] scores = {90, 85, 95}; // initialized with values
 
-        System.out.println(scores[0]); // output : 90 (0-based index)
+        System.out.print(scores[0]); // output : 90 (0-based index)
         scores[1] = 88; // update element
 
         // REVERSE AN ARRAY (we can reverse in-place(without extra space) by swapping elements from start and end)
@@ -115,7 +115,7 @@ public class Day1 {
             right++;
         }
 
-        System.out.println(Arrays.toString(arr2)); // output : 5,4,3,2,1
+        System.out.print(Arrays.toString(arr2)); // output : 5,4,3,2,1
 
 
         // MAXIMUM AND MINIMUM IN AN ARRAY (Initialize max/min)
@@ -135,7 +135,7 @@ public class Day1 {
             }
         }
 
-        System.out.println("Max3: " + max3 + "Min3: " + min3); // output: Max3: 20, Min3: 3
+        System.out.print("Max3: " + max3 + "Min3: " + min3); // output: Max3: 20, Min3: 3
 
 
         // EVEN NUMBERS IN ARRAY
@@ -146,7 +146,7 @@ public class Day1 {
                 count4++;
             }
         }
-        System.out.println("Even count: " + count4); // output: 3
+        System.out.print("Even count: " + count4); // output: 3
 
 
         // CHECK IF ARRAY IS SORTED (ASCENDING)
@@ -158,7 +158,7 @@ public class Day1 {
                 break;
             }
         }
-        System.out.println("Is Sorted: " + isSorted); // True
+        System.out.print("Is Sorted: " + isSorted); // True
 
 
         // SUM OF ARRAY ELEMENTS WITH CONDITIONS(Sum all the elements greater than a given threshold)
@@ -170,7 +170,7 @@ public class Day1 {
                 sum += num6;
             }
         }
-        System.out.println("Sum > " + threshold + ": " + sum); // output 35
+        System.out.print("Sum > " + threshold + ": " + sum); // output 35
 
 
         // ROTATE ARRAY LEFT BY ONE POSITION(Shift all elements left by one, 1st element becomes last)
@@ -182,7 +182,7 @@ public class Day1 {
             }
             arr7[arr7.length - 1] = first;
         }
-        System.out.println(Arrays.toString(arr7)); // output 20, 30, 40, 50, 10
+        System.out.print(Arrays.toString(arr7)); // output 20, 30, 40, 50, 10
     }
 
 }
