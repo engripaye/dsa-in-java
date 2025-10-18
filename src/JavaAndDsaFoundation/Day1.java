@@ -112,10 +112,10 @@ public class Day1 {
             arr2[left] = arr2[right];
             arr2[right] = temp;
             left++;
-            right++;
+            right--;
         }
 
-        System.out.print(Arrays.toString(arr2)); // output : 5,4,3,2,1
+        System.out.println(Arrays.toString(arr2)); // output : 5,4,3,2,1
 
 
         // MAXIMUM AND MINIMUM IN AN ARRAY (Initialize max/min)
@@ -135,7 +135,7 @@ public class Day1 {
             }
         }
 
-        System.out.print("Max3: " + max3 + "Min3: " + min3); // output: Max3: 20, Min3: 3
+        System.out.println("Max3: " + max3 + "Min3: " + min3); // output: Max3: 20, Min3: 3
 
 
         // EVEN NUMBERS IN ARRAY
@@ -146,7 +146,7 @@ public class Day1 {
                 count4++;
             }
         }
-        System.out.print("Even count: " + count4); // output: 3
+        System.out.println("Even count: " + count4); // output: 3
 
 
         // CHECK IF ARRAY IS SORTED (ASCENDING)
@@ -158,7 +158,7 @@ public class Day1 {
                 break;
             }
         }
-        System.out.print("Is Sorted: " + isSorted); // True
+        System.out.println("Is Sorted: " + isSorted); // True
 
 
         // SUM OF ARRAY ELEMENTS WITH CONDITIONS(Sum all the elements greater than a given threshold)
@@ -170,7 +170,7 @@ public class Day1 {
                 sum += num6;
             }
         }
-        System.out.print("Sum > " + threshold + ": " + sum); // output 35
+        System.out.println("Sum > " + threshold + ": " + sum); // output 35
 
 
         // ROTATE ARRAY LEFT BY ONE POSITION(Shift all elements left by one, 1st element becomes last)
@@ -182,7 +182,7 @@ public class Day1 {
             }
             arr7[arr7.length - 1] = first;
         }
-        System.out.print(Arrays.toString(arr7)); // output 20, 30, 40, 50, 10
+        System.out.println(Arrays.toString(arr7)); // output 20, 30, 40, 50, 10
     }
 
 }
