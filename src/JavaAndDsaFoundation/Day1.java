@@ -29,7 +29,7 @@ public class Day1 {
         // DO-WHILE LOOP (Similar to while but checks condition after execution)
         int num = 0;
         do {
-            System.out.print("Num" + num);
+            System.out.print("Num " + num);
             num++;
         } while (num < 5);  // output 0 -> 4
 
@@ -38,7 +38,7 @@ public class Day1 {
         // ENHANCED FOR LOOP (For-Each) (Great for iterating over Arrays or collections)
         int [] arr = {0, 1, 2, 3, 4};
         for (int element : arr) {
-            System.out.print(element); // output 0 -> 4
+            System.out.println(element); // output 0 -> 4
         }
 
 
@@ -49,7 +49,7 @@ public class Day1 {
         // IF-ELSE STATEMENT
         int age = 20;
         if (age >= 18) {
-            System.out.print("Adult");
+            System.out.println("Adult");
         } else {
             System.out.print("Minor");
         }   // output - Adult
@@ -60,7 +60,7 @@ public class Day1 {
         if (score >= 90) {
             System.out.print("A");
         } else if (score >= 80) {
-            System.out.print("B");
+            System.out.println("B");
         }else {
             System.out.print("C");
         } // output - B
@@ -70,7 +70,7 @@ public class Day1 {
         String day = "Monday";
         switch (day) {
             case "Monday":
-                System.out.print("Start of the Week");
+                System.out.println("Start of the Week");
                 break;
             case "Friday":
                 System.out.print("End of the week");
@@ -82,7 +82,7 @@ public class Day1 {
 
         // TERNARY OPERATOR (shorthand for simple if-else)
         int max = (5 > 3) ? 5 : 3;
-        System.out.print(max); // output - 5
+        System.out.println(max); // output - 5
 
 
 
