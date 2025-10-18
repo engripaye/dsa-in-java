@@ -1,4 +1,4 @@
-package JavaAndDsaFoundation;
+package JavaAndDsaFoundation.Day1;
 
 import java.util.Arrays;
 

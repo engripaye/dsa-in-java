@@ -1,8 +1,8 @@
-package JavaAndDsaFoundation;
+package JavaAndDsaFoundation.Day2;
 
 // This is a simple example of java class demonstrating OOP Basics, including a class definition, attributes and constructors
 // Create a Student class with basic properties like name, age and grade
-public class Day2 {
+public class Student {
 
     private String name;
     private int age;
@@ -10,7 +10,7 @@ public class Day2 {
 
 
     // default constructors, initialize object with default values
-//    public Day2(){
+//    public Student(){
 //        this.name = "Musa";
 //        this.age = 3;
 //        this.grade = 5.0;
@@ -20,7 +20,7 @@ public class Day2 {
 //    }
 //
     // parameterized constructor: Allow initializing specific value
-    public Day2(String name, int age, double grade) {
+    public Student(String name, int age, double grade) {
         this.name = name;
         this.age = age;
         this.grade = grade;
@@ -50,7 +50,7 @@ public class Day2 {
 
         // creating a student using parameterized constructors
 
-        Day2 student2 = new Day2("Novel", 26, 56.9);
+        Student student2 = new Student("Novel", 26, 56.9);
 
         student2.displayDetails();
     }
