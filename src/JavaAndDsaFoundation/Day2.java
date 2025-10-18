@@ -42,6 +42,16 @@ public class Day2 {
 
         // creating student using the default constructor
 
+           // Day2 student1 = new Day2();
 
+           // student1.displayDetails();
+
+        System.out.println();
+
+        // creating a student using parameterized constructors
+
+        Day2 student2 = new Day2("Novel", 26, 56.9);
+
+        student2.displayDetails();
     }
 }
